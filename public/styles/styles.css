@@ -52,6 +52,7 @@ main {
 .trans {
   background: rgba(0, 0, 0, 0.548);
   min-height: 100px;
+  min-width: 100px;
 }
 
 .push {
