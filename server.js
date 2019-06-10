@@ -38,6 +38,10 @@ app.set("view engine", "handlebars");
 // Static directory
 app.use(express.static(path.join(__dirname, "public")));
 
+app.get("/", function(req, res) {
+  res.redirect("/");
+});
+
 // Routes
 // =============================================================
 require("./routes/html-routes.js")(app);
